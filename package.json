@@ -1,0 +1,26 @@
+{
+  "name": "blueiceplayground",
+  "version": "0.0.1",
+  "description": "My playground with the cool new techs.",
+  "main": "webserver//server//app.ts",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.3"
+  },
+  "scripts": {
+    "start": "node webserver//server//app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueiceZzz/blueicePlayground.git"
+  },
+  "author": "blueice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueiceZzz/blueicePlayground/issues"
+  },
+  "homepage": "https://github.com/blueiceZzz/blueicePlayground#readme"
+}
