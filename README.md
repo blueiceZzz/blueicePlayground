@@ -1,3 +1,3 @@
 # blueicePlayground
-My personal playground with node.js, OpenCV(-Python), three.js and so on.
+My personal playground with OpenCV, node.js, three.js and so on.
 
