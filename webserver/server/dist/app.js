@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 console.log("Hello world!");
 const app = (0, express_1.default)();
 app.get("/", (req, res) => {
-    res.send("Hallo ihr penner");
+    res.send("Hallo ihr penner!");
 });
 let port = process.env.PORT;
 if (port == null || port == "") {

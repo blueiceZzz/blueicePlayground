@@ -5,7 +5,7 @@ console.log("Hello world!");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Hallo ihr penner")
+    res.send("Hallo ihr penner!")
 });
 
 let port:any = process.env.PORT;
