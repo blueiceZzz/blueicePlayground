@@ -2,11 +2,10 @@ import express from "express";
 
 console.log("Hello world!");
 
-const app = express();
+import path from "path";
 
-app.get("/", (req, res) => {
-    res.send("Hallo ihr penner!!")
-});
+// create app
+const app = express();
 
 let port:any = process.env.PORT;
 if (port == null || port == "") {
@@ -15,4 +14,18 @@ if (port == null || port == "") {
 
 app.listen(port, () => {
     console.log("server started on localhost: ", port);
+});
+
+// serve the whole client/public folder
+// __dirname: points to /server/dist cause of typescript compiling
+const publicPath = path.join(__dirname + "/../../client/build");
+
+console.log(__dirname, "\n", publicPath)
+
+app.use(express.static(publicPath)); // allows nodejs to serve everything in public folder
+// app.use(express.static(publicPath));
+
+// serve index.html
+app.get("/", (req, res) => {
+  res.sendFile(path.join(publicPath, "index.html"));
 });
