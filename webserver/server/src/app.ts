@@ -18,9 +18,10 @@ app.listen(port, () => {
 
 // serve the whole client/public folder
 // __dirname: points to /server/dist cause of typescript compiling
-const publicPath = path.join(__dirname + "/../../client/build");
+const publicPath = path.join(__dirname, "..", "client", "build");
 
-console.log(__dirname, "\n", publicPath)
+// console.log(__dirname, "\n", publicPath)
+// console.log(path.join(__dirname, "server"))
 
 app.use(express.static(publicPath)); // allows nodejs to serve everything in public folder
 // app.use(express.static(publicPath));

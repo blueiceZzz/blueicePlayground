@@ -14,8 +14,9 @@ if (port == null || port == "") {
 app.listen(port, () => {
     console.log("server started on localhost: ", port);
 });
-const publicPath = path_1.default.join(__dirname + "/../../client/build");
+const publicPath = path_1.default.join(__dirname, "..", "client", "build");
 console.log(__dirname, "\n", publicPath);
+console.log(path_1.default.join(__dirname, "server"));
 app.use(express_1.default.static(publicPath));
 app.get("/", (req, res) => {
     res.sendFile(path_1.default.join(publicPath, "index.html"));
