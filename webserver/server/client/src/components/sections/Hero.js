@@ -5,6 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import Emoji from '../elements/Emoji';
 
 const propTypes = {
   ...SectionProps.types
@@ -61,12 +62,13 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
+              My playground with <span className="text-color-primary">Node.js, React, Three.js</span> and so on.
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-                </p>
+                Web-dev is cool, fresh and free, why not play with it? <br />
+                OpenSource is not just a hobby, it's a way of life.<br />
+              Loading page template provided with <Emoji symbol="❤"aria-label="red-heart" />  by <a href='https://cruip.com'>Cruip.com</a>.</p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">

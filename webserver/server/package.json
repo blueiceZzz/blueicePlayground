@@ -7,9 +7,10 @@
     "watch": "tsc -w",
     "start-server": "node dist/app.js",
     "build-server": "tsc",
-    "heroku-fore-deploy": "(cd client && yarn build) && tsc && node dist/app.js",
+    "build-client": "cd client/ && yarn build && cd ..",
+    "heroku-fore-deploy": "(cd client && yarn build) && cd .. && tsc -p . && node dist/app.js",
     "start": "node dist/app.js",
-    "dev": "nodemon dist/app.js",
+    "dev": "concurrently -k \"tsc -p . -w\" \"nodemon dist/app.js\"",
     "slow-start": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.15",
+    "concurrently": "^7.0.0",
     "nodemon": "^2.0.15",
     "typescript": "^4.5.5"
   },
