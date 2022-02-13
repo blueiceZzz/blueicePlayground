@@ -5,7 +5,7 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
-import Emoji from '../elements/Emoji';
+// import Emoji from '../elements/Emoji';
 
 const propTypes = {
   ...SectionProps.types
@@ -67,9 +67,9 @@ const Hero = ({
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Web-dev is cool, fresh and free, why not play with it? <br />
-                OpenSource is not just a hobby, it's a way of life.<br />
-              Loading page template provided with <Emoji symbol="❤"aria-label="red-heart" />  by <a href='https://cruip.com'>Cruip.com</a>.</p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
+                OpenSource is not just a hobby, it's a way of life.<br /></p>
+              {/* <p>Loading page template provided with <Emoji symbol="❤"aria-label="red-heart" />  by <a href='https://cruip.com'>Cruip.com</a>.</p> */}
+              {/* <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
                     Get started
@@ -78,30 +78,30 @@ const Hero = ({
                     View on Github
                     </Button>
                 </ButtonGroup>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
+            {/* <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
-            >
+            > */}
               <Image
                 className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
+                src={require('./../../assets/images/3dmodelling-titel-img.png')}
+                alt="3d modelling"
+                width={747}
+                height={420} />
+            {/* </a> */}
           </div>
-          <Modal
+          {/* <Modal
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
             video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
+            videoTag="iframe" /> */}
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 import FooterSocial from './partials/FooterSocial';
+import Emoji from '../elements/Emoji';
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,
@@ -41,11 +42,11 @@ const Footer = ({
           )}>
           <div className="footer-top space-between text-xxs">
             <Logo />
-            <FooterSocial />
+            {/* <FooterSocial /> */}
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
+            <div className="footer-copyright">React app template provided with <Emoji symbol="❤"aria-label="red-heart" /> by <a href='https://cruip.com'>Cruip.com</a>. <br/>Web-app by <a href='https://github.com/blueiceZzz'>blueice</a>. All right reserved</div>
           </div>
         </div>
       </div>

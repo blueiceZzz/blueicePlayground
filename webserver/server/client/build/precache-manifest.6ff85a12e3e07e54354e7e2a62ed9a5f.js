@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e6b638e086f9412be5e5b431f725ea5f",
+    "revision": "cff52eb2607b2ae4623cba183ea34e2f",
     "url": "/index.html"
   },
   {
-    "revision": "a6164af419ad94d6e213",
-    "url": "/static/css/main.a3181438.chunk.css"
+    "revision": "5fd40fe5208bb2e82844",
+    "url": "/static/css/main.15d73320.chunk.css"
   },
   {
-    "revision": "efec64bc12e769333667",
-    "url": "/static/js/2.4779af5c.chunk.js"
+    "revision": "064baceaeb436572c181",
+    "url": "/static/js/2.2fc55cb4.chunk.js"
   },
   {
     "revision": "0def066106b5692cd5c135dcafc5767d",
-    "url": "/static/js/2.4779af5c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2fc55cb4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a6164af419ad94d6e213",
-    "url": "/static/js/main.3693891c.chunk.js"
+    "revision": "5fd40fe5208bb2e82844",
+    "url": "/static/js/main.a0601153.chunk.js"
   },
   {
     "revision": "ea630fe81389fbceefbb",
     "url": "/static/js/runtime-main.bf9f4589.js"
+  },
+  {
+    "revision": "05000813edd46a62edbcd86c43a0e353",
+    "url": "/static/media/3dmodelling-titel-img.05000813.png"
   },
   {
     "revision": "3ce357e71a836a86691b904396a8955c",
@@ -74,9 +78,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2810a88b1d6365b363caeabe678f1629",
     "url": "/static/media/logo.2810a88b.svg"
-  },
-  {
-    "revision": "a622fc5dd8adcdd27ea42218385013b4",
-    "url": "/static/media/video-placeholder.a622fc5d.jpg"
   }
 ]);
