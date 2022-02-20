@@ -66,8 +66,8 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Web-dev is cool, fresh and free, why not play with it? <br />
-                OpenSource is not just a hobby, it's a way of life.<br /></p>
+                Web-dev is cool, fresh and free, why not play with it?</p>
+                <p className="reveal-from-bottom" data-reveal-delay="400" >OpenSource is not just a hobby, it's a way of life.</p>
               {/* <p>Loading page template provided with <Emoji symbol="❤"aria-label="red-heart" />  by <a href='https://cruip.com'>Cruip.com</a>.</p> */}
               {/* <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
