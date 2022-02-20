@@ -81,21 +81,21 @@ const Hero = ({
               </div> */}
             </div>
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            {/* <a
+          {/* <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
+            <a
               data-video="https://player.vimeo.com/video/174002812"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
-            > */}
+            >
               <Image
                 className="has-shadow"
                 src={require('./../../assets/images/3dmodelling-titel-img.png')}
                 alt="3d modelling"
                 width={747}
                 height={420} />
-            {/* </a> */}
-          </div>
+            </a>
+          </div> */}
           {/* <Modal
             id="video-modal"
             show={videoModalActive}

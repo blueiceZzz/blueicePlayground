@@ -8,13 +8,15 @@ import path from "path";
 const app = express();
 
 let port:any = process.env.PORT;
+// local dev environment
 if (port == null || port == "") {
   port = 8000;
+
+  app.listen(port, () => {
+    console.log("server started on localhost: ", port);
+});  
 }
 
-app.listen(port, () => {
-    console.log("server started on localhost: ", port);
-});
 
 // serve the whole client/public folder
 // __dirname: points to /server/dist cause of typescript compiling

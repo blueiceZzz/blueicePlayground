@@ -46,7 +46,7 @@ const Footer = ({
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">React app template provided with <Emoji symbol="❤"aria-label="red-heart" /> by <a href='https://cruip.com'>Cruip.com</a>. <br/>Web-app by <a href='https://github.com/blueiceZzz'>blueice</a>. All right reserved</div>
+            <div className="footer-copyright">React app template provided with <Emoji symbol="❤"aria-label="red-heart" /> by <a href='https://cruip.com'>Cruip.com</a>. <br/>Web-app by <a href='https://github.com/blueiceZzz'>blueice</a>. All rights reserved</div>
           </div>
         </div>
       </div>

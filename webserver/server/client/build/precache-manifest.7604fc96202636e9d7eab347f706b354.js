@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cff52eb2607b2ae4623cba183ea34e2f",
+    "revision": "9b077d4a77add3ea021f7e515155b440",
     "url": "/index.html"
   },
   {
-    "revision": "5fd40fe5208bb2e82844",
+    "revision": "44862bfc60d9610acb91",
     "url": "/static/css/main.15d73320.chunk.css"
   },
   {
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2fc55cb4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5fd40fe5208bb2e82844",
-    "url": "/static/js/main.a0601153.chunk.js"
+    "revision": "44862bfc60d9610acb91",
+    "url": "/static/js/main.89982d83.chunk.js"
   },
   {
     "revision": "ea630fe81389fbceefbb",
     "url": "/static/js/runtime-main.bf9f4589.js"
-  },
-  {
-    "revision": "05000813edd46a62edbcd86c43a0e353",
-    "url": "/static/media/3dmodelling-titel-img.05000813.png"
   },
   {
     "revision": "3ce357e71a836a86691b904396a8955c",

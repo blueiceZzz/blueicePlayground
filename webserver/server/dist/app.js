@@ -10,10 +10,10 @@ const app = (0, express_1.default)();
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8000;
+    app.listen(port, () => {
+        console.log("server started on localhost: ", port);
+    });
 }
-app.listen(port, () => {
-    console.log("server started on localhost: ", port);
-});
 const publicPath = path_1.default.join(__dirname, "..", "client", "build");
 app.use(express_1.default.static(publicPath));
 app.get("/", (req, res) => {

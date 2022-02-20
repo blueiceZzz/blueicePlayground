@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "tsc -w",
+    "watch-server": "tsc -w",
+    "watch-client": "cd client/ && yarn watch",
     "start-server": "node dist/app.js",
     "build-server": "tsc",
     "build-client": "cd client/ && yarn build && cd ..",
-    "heroku-fore-deploy": "(cd client && yarn build) && cd .. && tsc -p . && node dist/app.js",
+    "heroku-before-deploy": "(cd client && yarn build) && cd .. && tsc -p . && node dist/app.js",
     "start": "node dist/app.js",
-    "dev": "concurrently -k \"tsc -p . -w\" \"nodemon dist/app.js\"",
+    "dev": "concurrently -k \"tsc -p . -w\" \"yarn watch-client\" \"nodemon dist/app.js\"",
     "slow-start": "ts-node src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
