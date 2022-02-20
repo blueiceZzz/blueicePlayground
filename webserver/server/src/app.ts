@@ -14,7 +14,13 @@ if (port == null || port == "") {
 
   app.listen(port, () => {
     console.log("server started on localhost: ", port);
-});  
+  });  
+  
+} else { // heroku server
+
+  app.listen(port, () => {
+    console.log("server started on port: ", port);
+  });  
 }
 
 

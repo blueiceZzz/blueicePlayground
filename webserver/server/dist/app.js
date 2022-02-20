@@ -14,6 +14,11 @@ if (port == null || port == "") {
         console.log("server started on localhost: ", port);
     });
 }
+else {
+    app.listen(port, () => {
+        console.log("server started on port: ", port);
+    });
+}
 const publicPath = path_1.default.join(__dirname, "..", "client", "build");
 app.use(express_1.default.static(publicPath));
 app.get("/", (req, res) => {
